@@ -13,8 +13,8 @@ int dotWidth;
 int dotHeight;
 void setup() {
   size(1280, 726);
-  dotWidth = 4;
-  dotHeight = 4;
+  dotWidth = 40;
+  dotHeight = 40;
   // The background image must be the same size as the parameters
   // into the size() method. In this program, the size of the image
   // is 640 x 360 pixels.
@@ -28,7 +28,7 @@ void draw() {
 }
 
 void loadData() {
-
+  int colour = 255;
   for (TableRow row : coords.rows()) {
     float lng = row.getFloat("lng"); //value accessed by column name or index
     float ltd = row.getFloat("ltd");
