@@ -32,6 +32,10 @@ void loadData() {
   for (TableRow row : coords.rows()) {
     float lng = row.getFloat("lng"); //value accessed by column name or index
     float ltd = row.getFloat("ltd");
+    if (lng >= 500)
+      fill(220, 10, 20);
+    else
+      fill(10,220,20);
     ellipse(lng, ltd, dotWidth, dotHeight);
 
     }
